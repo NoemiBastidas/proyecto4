@@ -1,1 +1,131 @@
-<p>sensor works!</p>
+<!-- <div class="container-xl">
+  <div class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Sensores </h2>
+          </div>
+          <div class="col-sm-6">
+            <a href="#addSensorModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i>
+              <span>Nuevo Actuador</span></a>
+            <a href="#deleteSensorModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i>
+              <span>Eliminar</span></a>
+          </div>
+        </div>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Id</label>
+          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombre</label>
+          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Modelo</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Descripción</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div> -->
+<!-- <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div> -->
+<!-- <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+      <br>
+
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Para riego en campo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>Para riego en campo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> -->
+
+<!-- <h1>Home</h1>
+<hr>
+<ng-template #addSensor let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Añadir Sensor</h4>
+    <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+      <span aria-hidden="true" &times;></span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Id</label>
+      <input type="number" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" class="form-control" required>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close()">Ok</button>
+
+  </div>
+</ng-template>
+<button type="button" class="btn btn-outline-danger" (click)="modal.open(addSensor)">lanzar modal</button> -->
+
+<h1>Modal</h1>
+<hr>
+<ng-template #contenido let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Titulo Modal</h4>
+    <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+    Este es el contenido de este modal.
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+  </div>
+</ng-template>
+
+<button type="button" class="btn btn-outline-danger" (click)="openSM(contenido)">lanzar modal SM</button>
+<button type="button" class="btn btn-outline-success" (click)="openLG(contenido)">lanzar modal LG</button>
+<button type="button" class="btn btn-outline-secondary" (click)="openXL(contenido)">lanzar modal XL</button>
+<button type="button" class="btn btn-outline-primary" (click)="openCentrado(contenido)">lanzar modal centrado</button>
+<button type="button" class="btn btn-outline-warning" (click)="openScroll(contenido)">lanzar modal scroll</button>
+<hr>
+<button type="button" class="btn btn-outline-info" (click)="openBackground(contenido)">lanzar modal
+  openBackground</button>
+<button type="button" class="btn btn-outline-dark" (click)="openWindow(contenido)">lanzar modal window</button>

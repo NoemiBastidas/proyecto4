@@ -16,3 +16,6 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
     }
 }
+
+// drop schema if exists minkafab cascade;
+// create schema minkafab;
