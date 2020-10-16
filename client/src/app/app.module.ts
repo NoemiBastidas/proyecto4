@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { Route, Router, RouterModule } from '@angular/router';
 import { ModalNewComponent } from './modal-new/modal-new.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 const router: Route[] = [
 
 ];

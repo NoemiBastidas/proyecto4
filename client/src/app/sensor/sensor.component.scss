@@ -273,3 +273,18 @@ table.table .avatar {
 .modal form label {
   font-weight: normal;
 }
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.thead {
+  background-color: #435D7D;
+}
